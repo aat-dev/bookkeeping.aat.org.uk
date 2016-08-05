@@ -1,0 +1,17 @@
+.header--cta-button, .hero_message__content--cta-button, .who__fees--cta-button {
+  @extend .btn;
+  @extend .btn-success;
+
+  color: #fff !important;
+  background-color: $aat-primary !important;
+  border-color: $aat-btn-border !important;
+
+  &:hover {
+    background-color: $aat-btn-bgd !important;
+    border-color: $aat-btn-border !important;
+  }
+
+  &:visited {
+    color: #fff !important;
+  }
+}

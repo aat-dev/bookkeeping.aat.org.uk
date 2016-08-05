@@ -1,0 +1,18 @@
+.extras {
+  &__contain {
+    @extend .container;
+
+    .extras_header {
+      text-align: center;
+    }
+
+    .extras__content {
+      @extend .row;
+
+      &--col {
+        @extend .col-md-4;
+
+      }
+    }
+  }
+}

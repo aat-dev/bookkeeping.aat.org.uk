@@ -1,0 +1,36 @@
+.hero {
+  margin-top: 80px;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  background: $aat-primary;
+  text-align: center;
+
+  .hero-banner {
+    background: url("/assets/img/BK-illo.svg") no-repeat center center $aat-primary;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 360px;
+
+    .hero_message {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      &__content {
+        max-width: 600px;
+        background: $aat-primary;
+        margin: auto;
+        padding: 20px;
+
+        h1 {
+        }
+
+      }
+    }
+  }
+}

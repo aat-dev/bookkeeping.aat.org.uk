@@ -1,0 +1,20 @@
+.intro {
+  @extend .container;
+
+  .intro_bgd {
+  }
+
+  .intro_message {
+    @extend .row;
+
+    &__content {
+      @extend .col-md-12;
+      //@extend .col-sm-6;
+      
+      &--subtext {
+        font-size: 1.25em;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.who {
+  background: $aat-bgd-primary;
+  
+  &__contain {
+    @extend .container;
+
+    &--inner {
+      padding: 30px 60px 0;
+      background: #fff;
+      border: 1px solid $aat-border-secondary;
+      max-width: 45em;
+      margin: auto;
+
+      .who__header {
+
+      }
+
+      .who__list {
+        //margin-left: 0;
+        //padding-right: 0;
+        //list-style-type: none;
+
+        &--item {
+          margin: 30px 0 0 -32px;
+          position: relative;
+          padding: 0 0 0 34px;
+          vertical-align: baseline;
+
+          .who-fa {
+            position: absolute;
+            color: $aat-primary;
+            left: 0;
+            top: -6px;
+            font-size: 26px;
+
+            &:before {
+              margin-left: -0.1em;
+            }
+          }
+        }
+      }
+
+    }
+
+    .who__more-info {
+      margin: 30px 0;
+      padding: 25px 30px 30px;
+      background: $aat-bgd-secondary;
+      
+      p {
+        font-size: 0.8em;
+        display: inline;
+      }
+    }
+
+    .who__asterix {
+      font-size: 26px;
+      color: $aat-primary;
+      position: relative;
+      display: inline;
+      top: 7px;
+      padding-right: 5px;
+    }
+
+    .who__fees {
+      border-top: 2px solid $aat-primary;
+      margin: 0 -60px;
+      padding: 30px 60px 60px;
+      overflow: hidden;
+
+      &--text {
+        padding: 30px 0;
+      }
+
+      &--cost {
+        @extend .col-md-9;
+        @extend .col-xs-12;
+
+        padding-left: 0;
+
+        &-text {
+          font-size: 1.5em;
+        }
+      }
+
+      &--cta {
+        @extend .col-md-3;
+        @extend .col-xs-12;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

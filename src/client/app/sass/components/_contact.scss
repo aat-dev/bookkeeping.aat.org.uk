@@ -1,0 +1,10 @@
+.contact {
+  &__contain {
+    @extend .container;
+    background: $aat-bgd-primary;
+
+    .contact__text {
+      @extend .col-md-12;
+    }
+  }
+}
