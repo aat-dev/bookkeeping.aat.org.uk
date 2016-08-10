@@ -1,10 +1,12 @@
 .contact {
   &__contain {
     @extend .container;
-    background: $aat-bgd-primary;
 
     .contact__text {
-      @extend .col-md-12;
+      @extend .col-md-4;
+      @extend .col-md-offset-4;
+      background: $aat-bgd-primary;
+      padding: 15px;
     }
   }
 }

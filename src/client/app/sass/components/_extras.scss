@@ -11,8 +11,21 @@
 
       &--col {
         @extend .col-md-4;
+        text-align: center;
 
       }
     }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    &__contain {
+      .extras__content {
+        &--col {
+          text-align: left;
+
+        }
+      }
+    }
+
   }
 }

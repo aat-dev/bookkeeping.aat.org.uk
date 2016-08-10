@@ -1,3 +1,7 @@
+.hero_message__content--cta-button {
+    font-size: 18px;
+}
+
 .header--cta-button, .hero_message__content--cta-button, .who__fees--cta-button {
   @extend .btn;
   @extend .btn-success;

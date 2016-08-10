@@ -1,20 +1,35 @@
 .intro {
   @extend .container;
+  padding: 60px 0;
 
   .intro_bgd {
   }
 
   .intro_message {
-    @extend .row;
+    //@extend .row;
+    text-align: center;
 
     &__content {
       @extend .col-md-12;
       //@extend .col-sm-6;
       
       &--subtext {
-        font-size: 1.25em;
+        font-size: 1em;
       }
 
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 90px 0;
+
+    .intro_message {
+      &__content {
+        &--subtext {
+          font-size: 1.25em;
+        }
+
+      }
     }
   }
 }

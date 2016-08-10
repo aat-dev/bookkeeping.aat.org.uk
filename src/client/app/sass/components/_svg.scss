@@ -1,0 +1,68 @@
+.herosvg {
+  width: 100%;
+  height: 400px;
+
+  .cls-1 {
+    fill: url(#linear-gradient);
+  }
+
+  .cls-2 {
+    fill: #faf15b;
+  }
+
+  .cls-13, .cls-3 {
+    fill: #009444;
+  }
+
+  .cls-3 {
+    opacity: 0.54;
+  }
+
+  .cls-12, .cls-3 {
+    isolation: isolate;
+  }
+
+  .cls-4 {
+    fill: #d7df23;
+  }
+
+  .cls-5 {
+    fill: #fff200;
+  }
+
+  .cls-6 {
+    fill: #f9ed32;
+  }
+
+  .cls-7 {
+    fill: #8dc63f;
+  }
+
+  .cls-12, .cls-8 {
+    fill: #fff766;
+  }
+
+  .cls-9 {
+    fill: #00341c;
+  }
+
+  .cls-10 {
+    fill: #006838;
+  }
+
+  .cls-11 {
+    fill: #004e2a;
+  }
+
+  .cls-12 {
+    opacity: 0.66;
+  }
+
+  .cls-14 {
+    fill: #006f33;
+  }
+
+
+  @media (min-width: $breakpoint-desktop) {
+  }
+}

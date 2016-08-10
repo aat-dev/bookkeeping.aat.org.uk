@@ -1,10 +1,8 @@
-// Reasons Section
 .reasons {
 
   width: 100%;
-  background: $aat-primary;
-  color: #fff;
-  padding: 40px;
+  background: $aat-bgd-secondary;
+  padding: 40px 10px 20px 10px;
 
   .reasons__contain {
     @extend .container;
@@ -24,14 +22,14 @@
 
     .reasons__list {
       padding: 0;
-      margin: 25px 0;
+      //margin: 25px 0;
 
       &--item {
         margin-bottom: 15px;
         position: relative;
         padding: 0 0 30px 34px;
         vertical-align: baseline;
-        height: 180px;
+        height: auto;
 
         h2 {
           padding-left: 0;
@@ -48,7 +46,7 @@
         i.reasons-fa {
           position: absolute;
           left: 0;
-          top: 0;
+          top: -7px;
           font-size: 26px;
 
           &:before {
@@ -60,6 +58,15 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
+    padding: 40px;
+
+    .reasons__list-wrap {
+      .reasons__list {
+        &--item {
+          height: 180px;
+        }
+      }
+    }
   }
 
 }

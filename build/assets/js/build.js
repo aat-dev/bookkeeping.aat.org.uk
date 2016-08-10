@@ -1,49 +1,29 @@
-// TweenMax.to('.hero', 2, {left: 600, backgroundColor: 'orange'});
+$( document ).ready(function() {
 
-// TweenMax.to('.hero', 4, {
-//     x: 600,
-//     rotation: 360,
-//     scale:0.5
-// });
+    var tmax_opts = {
+        delay: 0.25, // init pause time
+        repeat: -0, // make it repeat
+        repeatDelay: 0.25, // delay this amount on repeat
+        yoyo: true // also play sequence in reverse
+    };
 
+    var tmax_tl           = new TimelineMax(tmax_opts),
+        herosvg_shapes   = $('svg.herosvg > polygon'),
+        herosvg_stagger  = 0.00475,
+        herosvg_duration = 1.5;
 
+    var herosvg_staggerFrom = {
+        scale: 0,
+        opacity: 0,
+        transformOrigin: 'center center',
+    };
 
-// TweenMax.to('.hero', 2, {
-//     x: 600,
-//     ease: Back.easeOut
-// });
+    var herosvg_staggerTo = {
+        opacity: 1,
+        scale: 1,
+        ease: Elastic.easeInOut
+    };
 
-// TweenMax.from('.hero__h1', 5, {
-//     x: 600,
-//     opacity:0,
-//     ease: Bounce.easeOut
-// });
-//
-// TweenMax.staggerFrom('.box', 0.5, {
-//     opacity:0,
-//     y: 200,
-//     rotation: 360,
-//     scale: 2,
-//     delay: 5
-// }, 0.2
-//
-// );
-//
-// TweenMax.to('.hero__h1, .box', 0.5, {
-//     opacity:0,
-//     delay: 10,
-//     onComplete:complete
-// });
-//
-// function complete() {
-//     alert('thats all folks!!!!')
-// }
+    tmax_tl.staggerFromTo(herosvg_shapes, herosvg_duration, herosvg_staggerFrom, herosvg_staggerTo, herosvg_stagger, 0);
 
-
-var heroid = document.getElementById('Layer_1');
-
-TweenLite.to(heroid, 1, {
-    opacity: 0,
-    y: 50
 });
-
