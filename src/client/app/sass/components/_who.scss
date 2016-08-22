@@ -1,6 +1,6 @@
 .who {
   background: $aat-bgd-primary;
-  
+
   &__contain {
     @extend .container;
 
@@ -50,7 +50,7 @@
       margin: 30px 0;
       padding: 25px 30px 30px;
       background: $aat-bgd-secondary;
-      
+
       p {
         font-size: 0.8em;
         display: inline;
@@ -66,16 +66,18 @@
       padding-right: 5px;
     }
 
+    .who__asterix-small {
+      @extend .who__asterix;
+      font-size: inherit;
+      top: 0;
+    }
+
     .who__fees {
       border-top: 2px solid $aat-primary;
       margin: 0 -15px;
-      padding: 15px 15px 60px;
+      padding: 30px 15px 60px;
       overflow: hidden;
 
-      &--text {
-        padding: 30px 9px;
-        text-align: center;
-      }
 
       &--cost {
         @extend .col-md-9;
@@ -94,6 +96,19 @@
         @extend .col-xs-12;
         text-align: center;
       }
+
+      &--text {
+        padding: 30px 9px;
+        text-align: center;
+        clear: both;
+
+        &-ul {
+          list-style: inherit;
+          padding-top: 15px;
+          font-size: .9em;
+          text-align: left;
+        }
+      }
     }
   }
 
@@ -107,12 +122,7 @@
 
     .who__fees {
       margin: 0 -60px;
-      padding: 30px 60px 60px;
-
-      &--text {
-        text-align: left;
-        padding: 30px 0;
-      }
+      padding: 60px;
 
       &--cost {
         text-align: left;
@@ -122,16 +132,12 @@
       &--cta {
         text-align: left;
       }
+
+      &--text {
+        text-align: left;
+        padding: 30px 0;
+      }
     }
 
   }
 }
-
-
-
-
-
-
-
-
-
