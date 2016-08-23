@@ -1,4 +1,5 @@
-$( document ).ready(function() {
+// Shortcut for $(document).ready()
+$(function() {
 
     var tmax_opts = {
         delay: 0.25, // init pause time
@@ -27,3 +28,30 @@ $( document ).ready(function() {
     tmax_tl.staggerFromTo(herosvg_shapes, herosvg_duration, herosvg_staggerFrom, herosvg_staggerTo, herosvg_stagger, 0);
 
 });
+
+
+// Shortcut for $(document).ready()
+$(function () {
+    // Call on every window resize
+    $(window).resize(function () {
+
+        var svgRoot = document.getElementById('graphiclayer');
+
+        var vbValue1 = '580 320 900 360';
+        var vbValue2 = '0 0 1400 400';
+        var vbValue3 = '0 0 2000 360';
+
+        if (Modernizr.mq('(max-width: 667px)')) {
+            svgRoot.setAttribute('viewBox', vbValue1);
+        } else if (Modernizr.mq('(max-width: 1400px)')) {
+            svgRoot.setAttribute('viewBox', vbValue2);
+        } else {
+            svgRoot.setAttribute('viewBox', vbValue3);
+        }
+    }).resize(); // Cause an initial widow.resize to occur
+});
+
+
+
+
+
