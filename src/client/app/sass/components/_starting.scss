@@ -1,0 +1,25 @@
+//======================================
+//====== section Colour Styling ========
+//======================================
+
+.section--colour {
+  background: #4fb946;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 0;
+
+  &__contain {
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width: $breakpoint-desktop) { width: 50%; }
+  }
+
+  &__content {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) !important;
+    background: white;
+    padding: 2 * 15px;
+    text-align: center;
+  }
+
+}

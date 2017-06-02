@@ -1,7 +1,7 @@
 .reasons {
 
   width: 100%;
-  background: $aat-bgd-secondary;
+  //background: $aat-bgd-secondary;
   padding: 40px 10px 20px 10px;
 
   .reasons__contain {
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    padding: 40px;
+    padding: 0 40px;
 
     .reasons__list-wrap {
       .reasons__list {

@@ -7,11 +7,11 @@ section:first-of-type {
 }
 
 section:last-of-type {
-  padding: 0 0 60px 0;
+  padding: 60px 0;
   text-align: center;
 
   @media (min-width: $breakpoint-desktop) {
-    padding: 0 60px 60px;
+    padding: 60px 0;
     text-align: left;
   }
 }
